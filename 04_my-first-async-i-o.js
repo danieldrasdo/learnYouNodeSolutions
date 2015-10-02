@@ -5,6 +5,6 @@ fs.readFile(filePath, 'utf8', function finishedReading(error, fileContents) {
     if (error) {
         return console.error(error);
     }
-    fileContents = fileContents.split('\n').length - 1;
-    console.log(fileContents);
+    var numLines = fileContents.split('\n').length - 1;
+    console.log(numLines);
 })
